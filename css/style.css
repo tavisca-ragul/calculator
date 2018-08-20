@@ -1,0 +1,63 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.calculator {
+	display: block;
+	margin: 5% auto;
+	width: 1024px;
+}
+
+.calculator > div {
+	display: inline-grid;
+}
+
+.error-message {
+	display: none;
+}
+
+.display {
+	display: flex;
+	flex: 1;
+	justify-content: flex-end;
+	flex-direction: column-reverse;
+	width: 400px;
+	height: 80px;
+	border: 1px solid black;
+}
+
+.expression {
+	border: 0px;
+	height: 40px;
+	font-size: 20px;
+	text-align: right;
+}
+
+.keyboard {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.key {
+	width: 98px;
+	padding: 20px;
+}
+
+.history-container {
+	width: 500px;
+	min-height: 310px;
+	background: gray;
+}
+
+.history-container ul li {
+	list-style-type: none;
+}
+
+.history-container ul li:nth-child(2n+1) {
+	color: white;
+}
+
+.history-container ul li:nth-child(2n) {
+	color: orange;
+}
